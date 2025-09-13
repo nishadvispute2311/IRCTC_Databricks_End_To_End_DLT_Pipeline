@@ -29,25 +29,6 @@ Databricks Dashboard (Visualizations)
 
 ---
 
-## 📂 Project Structure  
-
-```
-
-IRCTC\_End\_To\_End\_Pipeline/
-│── kafka\_producer/         # Data generators for 4 Kafka topics
-│── kafka\_consumer/         # Consumers writing data into Databricks raw tables
-│── raw\_tables/             # Landing zone in Databricks
-│── bronze\_layer/           # Bronze ingestion notebooks
-│── silver\_layer/           # Transformations, deduplication, SCD1 logic
-│── gold\_layer/             # Fact & Dim tables creation (Bookings, Payments, etc.)
-│── transformations\_Code/   # Business transformations
-│── dashboards/             # Databricks dashboard queries
-│── README.md               # Project documentation
-
-````
-
----
-
 ## 🗄️ Data Flow  
 
 ### 1. **Kafka Producers (Data Generation)**
